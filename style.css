@@ -152,19 +152,19 @@ body {
 
 .container-download-link {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     max-width: 100%;
     min-width: 1200px;
+    margin: 0 10rem;
+    margin-bottom: 4rem;
 }
 
 .download-link {
     display: flex;
-    height: 7vh;
+    height: 4.5rem;
     justify-content: center;
     align-items: center;
-    margin: 9vh 20vh;
-    padding: 0% 2%;
 
     border-radius: 1vh;
     background-color: #d8fa00;
@@ -172,18 +172,26 @@ body {
     overflow: hidden;
 }
 
+.download-link-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 2rem;
+}
+
 .download-link-img {
     display: flex;
     height: auto;
     justify-content: center;
     align-items: center;
-    margin: 1vh 1vh;
+    margin: 0rem .5rem;
 
     max-width: 100%;
 }
 
 .img-link {
-    width: 20vh;
+    width: 12rem;
     animation: link-img-move-in 1s ease;
 }
 
