@@ -284,11 +284,11 @@ body {
 
 .text-teas-v span {
     width: 100%;
-    margin: 0 10%;
+    margin: 0 5%;
     text-align: center;
     text-wrap: wrap;
     font-family: 'din-next-medium';
-    font-size: 31px;
+    font-size: 35px;
     color: #222222;
 }
 
