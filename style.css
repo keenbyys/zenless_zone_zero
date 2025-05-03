@@ -223,9 +223,8 @@ body {
 }
 
 .teas-v-wrapper {
-    width: 129vh;
     height: auto;
-    margin: 0 auto;
+    margin: 0 14%;
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
     transition: .3s;
@@ -234,6 +233,7 @@ body {
 .teas-v-bg {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     background-color: #222222;
     border-radius: 2vh;
@@ -242,7 +242,6 @@ body {
     border-style: solid;
     border-color: #181818;
     z-index: 1;
-
     transition: .3s;
 }
 
@@ -269,7 +268,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: auto;
-    height: 43vh;
+    width: 16.5%;
     border-radius: .50rem;
 }
 
@@ -279,13 +278,18 @@ body {
     align-items: center;
     width: 100%;
     margin: 0 15% 3% 15%;
-
-    font-family: 'din-next-medium';
-    font-size: 3.7vh;
-    color: #222222;
-
     background-color: #efefef;
     border-radius: .2vh;
+}
+
+.text-teas-v span {
+    width: 100%;
+    margin: 0 10%;
+    text-align: center;
+    text-wrap: wrap;
+    font-family: 'din-next-medium';
+    font-size: 31px;
+    color: #222222;
 }
 
 .teas-v-detail-bg {
@@ -293,9 +297,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 2vh;
+    margin: 0 2%;
     padding: 1%;
-
     background-color: #181818;
     border-radius: 3vh;
 }
@@ -304,8 +307,8 @@ body {
     border-style: solid;
     border-color: #181818;
     border-radius: 1rem;
-    width: 77vh;
-    margin: 0 2%;
+    width: 63%;
+    margin: 0 1.5%;
 }
 
 /* NEW CHAR 1 */
