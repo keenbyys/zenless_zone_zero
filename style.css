@@ -220,6 +220,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     overflow: hidden;
+    min-width: 1600px;
 }
 
 .teas-v-wrapper {
@@ -319,6 +320,7 @@ body {
     box-sizing: border-box;
     background-color: #efefef;
     overflow: hidden;
+    min-width: 1600px;
 }
 
 .new-char-block-green {
@@ -645,6 +647,7 @@ body {
     box-sizing: border-box;
     background-color: #222222;
     overflow: hidden;
+    min-width: 1600px;
 }
 
 .merch-block-bg-pattern {
@@ -654,7 +657,7 @@ body {
 
 .merch-block-green {
     position: relative;
-    width: 30vh;
+    width: 18rem;
     height: auto;
     margin: 0 auto;
     box-sizing: border-box;
@@ -726,9 +729,9 @@ body {
     align-items: center;
     box-sizing: border-box;
     width: 96%;
-    height: 7vh;
+    height: 4rem;
     background-color: #d8fa00;
-    border-radius: 5vh;
+    border-radius: 5rem;
     border-style: solid;
     border-color: #d8fa00;
     transition: .3s;
@@ -738,7 +741,7 @@ body {
     position: absolute;
     display: flex;
     font-family: 'din-next-heavy';
-    font-size: 4vh;
+    font-size: 40px;
     color: #222222;
     transition: .3s;
 }
@@ -793,9 +796,9 @@ body {
     align-items: center;
     box-sizing: border-box;
     width: 96%;
-    height: 8vh;
+    height: 5rem;
     background-color: #d8fa00;
-    border-radius: 5vh;
+    border-radius: 5rem;
     border-style: solid;
     border-color: #d8fa00;
     transition: .3s;
@@ -805,7 +808,7 @@ body {
     position: absolute;
     display: flex;
     font-family: 'din-next-heavy';
-    font-size: 4vh;
+    font-size: 40px;
     color: #222222;
     transition: .3s;
 }
@@ -841,6 +844,7 @@ body {
     width: 100%;
     height: auto;
     background-color: black;
+    min-width: 1600px;
 }
 
 .footer-wrapper {
@@ -888,9 +892,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 3vh;
+    height: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vh;
+    font-size: 13px;
     color: #797979;
     width: 100%;
     line-height: 1.3;
