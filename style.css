@@ -37,6 +37,12 @@ body {
     font-family: 'din-next-regular', sans-serif;
 }
 
+.banner-block {
+    width: 100%;
+    height: auto;
+    min-width: 1600px;
+}
+
 /* navigation */
 .header {
     position: fixed;
@@ -748,7 +754,7 @@ body {
 
 .container-merch-prod-block-text:hover .merch-open-prod-text {
     color: #d8fa00;
-    font-size: 4.5vh;
+    font-size: 45px;
 }
 
 .container-merch-prod-block-text:hover .button-open-prod-bg {
@@ -815,7 +821,7 @@ body {
 
 .container-merch-link-block-text:hover .merch-link-text {
     color: #d8fa00;
-    font-size: 4.5vh;
+    font-size: 45px;
 }
 
 .container-merch-link-block-text:hover .button-link-bg {
