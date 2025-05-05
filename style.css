@@ -35,6 +35,7 @@ body {
     margin: 0%;
     background-color: #222222;
     font-family: 'din-next-regular', sans-serif;
+    min-width: 1280px;
 }
 
 .banner-block {
