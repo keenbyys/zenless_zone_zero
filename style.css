@@ -40,7 +40,6 @@ body {
 .banner-block {
     width: 100%;
     height: auto;
-    min-width: 1600px;
 }
 
 /* navigation */
@@ -166,7 +165,6 @@ body {
     width: auto;
     height: auto;
     max-width: 100%;
-    min-width: 100%;
     margin-bottom: 4rem;
 }
 
@@ -226,7 +224,6 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     overflow: hidden;
-    min-width: 1600px;
 }
 
 .teas-v-wrapper {
@@ -326,7 +323,6 @@ body {
     box-sizing: border-box;
     background-color: #efefef;
     overflow: hidden;
-    min-width: 1600px;
 }
 
 .new-char-block-green {
@@ -428,7 +424,6 @@ body {
     box-sizing: border-box;
     background-color: #222222;
     width: 100%;
-    min-width: 1680px;
     height: 40rem;
     overflow: hidden;
 }
@@ -653,7 +648,6 @@ body {
     box-sizing: border-box;
     background-color: #222222;
     overflow: hidden;
-    min-width: 1600px;
 }
 
 .merch-block-bg-pattern {
@@ -850,7 +844,6 @@ body {
     width: 100%;
     height: auto;
     background-color: black;
-    min-width: 1600px;
 }
 
 .footer-wrapper {
