@@ -328,9 +328,9 @@ body {
 
 .new-char-block-green {
     position: relative;
-    width: auto;
+    width: 33rem;
     height: auto;
-    margin: 0 35%;
+    margin: 0 auto;
     box-sizing: border-box;
     background-color: #d8fa00;
     overflow: hidden;
@@ -1000,8 +1000,8 @@ body {
     position: relative;
     width: 100%;
     background-color: #181718;
-    margin-top: 10vh;
-    height: 90vh;
+    margin-top: 5.6rem;
+    height: auto;
     overflow: hidden;
 }
 
@@ -1009,13 +1009,13 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-    height: 10.7vh;
+    height: 6.2rem;
 }
 
 .char-block-green {
     position: relative;
-    width: 43vh;
-    height: 11vh;
+    width: 33rem;
+    height: 6.2rem;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #d8fa00;
@@ -1028,7 +1028,7 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 80vh;
+    height: auto;
 }
 
 .char-position-imgs {
@@ -1040,7 +1040,7 @@ body {
 .char-banner-white-bg {
     position: relative;
     box-sizing: border-box;
-    height: 90vh;
+    height: 52rem;
     background-color: #efefef;
     overflow: hidden;
 }
@@ -1049,7 +1049,7 @@ body {
     position: absolute;
     top: 42%;
     left: 0;
-    width: 15vh;
+    width: 10rem;
     animation: move-to-right 1s ease;
 }
 
@@ -1067,7 +1067,7 @@ body {
     position: absolute;
     top: 42%;
     right: 0;
-    width: 15vh;
+    width: 10rem;
     animation: move-to-left 1s ease;
 }
 
@@ -1086,7 +1086,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 275vh;
+    width: 160rem;
     transition: .3s;
 
     animation: img-scale-in 0.5s ease, image-fade 26s ease-in-out infinite;
@@ -1113,12 +1113,12 @@ body {
 @keyframes img-scale-in {
     0% {
         filter: blur(.7vh);
-        width: 290vh;
+        width: 175rem;
     }
 
     100% {
         filter: blur(0vh);
-        width: 275vh;
+        width: 160rem;
     }
 }
 
@@ -1142,27 +1142,27 @@ body {
 }
 
 .char-banner-white-bg:hover .char-banner1{
-    width: 285vh;
+    width: 175rem;
 }
 
 .char-banner-white-bg:hover .char-banner2{
-    width: 285vh;
+    width: 175rem;
 }
 
 .char-banner-white-bg:hover .char-banner3{
-    width: 285vh;
+    width: 175rem;
 }
 
 .char-banner-white-bg:hover .char-banner4{
-    width: 285vh;
+    width: 175rem;
 }
 
 .char-banner-white-bg:hover .char-banner5{
-    width: 285vh;
+    width: 175rem;
 }
 
 .char-banner-white-bg:hover .char-banner6{
-    width: 285vh;
+    width: 175rem;
 }
 
 /* FACTION */
@@ -1178,8 +1178,8 @@ body {
 
 .faction-block-green {
     position: relative;
-    width: 38vh;
-    height: 11vh;
+    width: 22rem;
+    height: auto;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #d8fa00;
@@ -1193,8 +1193,7 @@ body {
     align-items: center;
     height: auto;
     box-sizing: border-box;
-    padding: 0 11%;
-    margin: 1% 0;
+    margin: 1% 10%;
     overflow: hidden;
 }
 
@@ -1234,8 +1233,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     width: 96%;
-    height: 7vh;
-    border-radius: 5vh;
+    height: 5rem;
+    border-radius: 5rem;
     transition: .3s;
     overflow: hidden;
     background-color: #e6e6e6;
@@ -1259,7 +1258,7 @@ body {
     position: absolute;
     display: flex;
     font-family: 'din-next-bold';
-    font-size: 2.5vh;
+    font-size: 25px;
     text-align: center;
     color: #222222;
     transition: .3s;
@@ -1271,7 +1270,7 @@ body {
 
 .faction-block {
     position: relative;
-    width: 41vh;
+    width: 100%;
     transition: .3s;
 }
 
@@ -1292,10 +1291,9 @@ body {
 .move-faction-text-bg {
     position: absolute;
     display: flex;
-    width: 140vh;
-    height: 1.7vh;
+    width: 100%;
     background-color: #c9c9c9;
-    border-radius: 1vh;
+    border-radius: 2rem;
     overflow: hidden;
     animation: open-bg 22s ease infinite;
 }
@@ -1334,8 +1332,8 @@ body {
 
 .upcoming-faction-block-green {
     position: relative;
-    width: 67vh;
-    height: 11vh;
+    width: 39rem;
+    height: auto;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #d8fa00;
@@ -1359,8 +1357,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     width: 96%;
-    height: 7vh;
-    border-radius: 5vh;
+    height: 5rem;
+    border-radius: 5rem;
     transition: .3s;
     overflow: hidden;
     background-color: #313131;
@@ -1384,7 +1382,7 @@ body {
     position: absolute;
     display: flex;
     font-family: 'din-next-bold';
-    font-size: 2.5vh;
+    font-size: 25px;
     text-align: center;
     color: #efefef;
     transition: .3s;
