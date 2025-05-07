@@ -1400,7 +1400,7 @@ body {
     height: auto;
     box-sizing: border-box;
     background-color: #efefef;
-    margin-top: 5.6%;
+    margin-top: 5.7rem;
     overflow: hidden;
 }
 
@@ -1417,21 +1417,21 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 0% 11%;
+    margin: 0% 10%;
 }
 
 .haru-button-back-bg {
     position: relative;
     display: flex;
-    width: 50vh;
-    height: 6vh;
+    width: 30rem;
+    height: 3.5rem;
     margin: 1%;
     background-color: #d8fa00;
-    border-radius: 5vh;
+    border-radius: 5rem;
     text-decoration: none;
     overflow: hidden;
     border-style: solid;
-    border-width: 0.5vh;
+    border-width: 4px;
     border-color: #222222;
     transition: .3s;
     animation: move-back-button 1s ease;
@@ -1463,7 +1463,7 @@ body {
     height: 100%;
     font-family: 'din-next-bold';
     font-style: italic;
-    font-size: 4vh;
+    font-size: 40px;
     color: #222222;
 }
 
@@ -1478,9 +1478,9 @@ body {
     height: 100%;
     font-family: 'din-next-bold';
     font-style: italic;
-    font-size: 4vh;
+    font-size: 40px;
     color: #22222200;
-    -webkit-text-stroke: 0.1vh #d8fa00;
+    -webkit-text-stroke: 0.8px #d8fa00;
     opacity: 0;
     transition: .3s;
 }
@@ -1527,15 +1527,15 @@ body {
 .haru-button-base-stats-bg {
     position: relative;
     display: flex;
-    width: 30vh;
-    height: 6vh;
+    width: 20rem;
+    height: 3.5rem;
     margin: 1% 2%;
     background-color: #d8fa00;
-    border-radius: 5vh;
+    border-radius: 5rem;
     text-decoration: none;
     overflow: hidden;
     border-style: solid;
-    border-width: 0.5vh;
+    border-width: 4px;
     border-color: #222222;
     transition: .3s;
     animation: move-back-button 1s ease;
@@ -1567,7 +1567,7 @@ body {
     height: 100%;
     font-family: 'din-next-bold';
     font-style: italic;
-    font-size: 4vh;
+    font-size: 40px;
     color: #222222;
 }
 
@@ -1593,7 +1593,7 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-    height: 91vh;
+    height: auto;
     background-color: #efefef;
     overflow: hidden;
     margin: 0% 0;
@@ -1606,18 +1606,16 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 11%;
+    height: 40rem;
+    margin: 0% 10%;
     margin-bottom: 2%;
     padding: 5% 0;
-    padding-right: 5.3vh;
+    padding-right: 5.3rem;
 }
 
 .container-haru-art {
-    position: absolute;
-    left: -20vh;
-    bottom: -18.7vh;
-    width: 181vh;
-    height: 86.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     animation: haru-art 1s ease;
 }
@@ -1635,24 +1633,24 @@ body {
 }
 
 .haru-art {
-    position: relative;
+    position: absolute;
+    left: -15%;
     display: grid;
-    width: 70vh;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
 }
 
 .haru-art img {
     position: absolute;
     display: block;
-    top: -10%;
-    left: -4%;
-    right: 0%;
+    left: 0%;
     bottom: 0%;
-    width: 103vh;
+    width: 59rem;
 }
 
 .haru-info-block {
-    position: relative;
+    position: absolute;
+    right: 7%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -1663,8 +1661,8 @@ body {
 .haru-info {
     position: relative;
     display: flex;
-    width: 50vh;
-    height: 40vh;
+    width: 29rem;
+    height: 23rem;
     background-color: #222222;
     border-radius: 3vh;
     overflow: hidden;
@@ -1813,9 +1811,9 @@ body {
     left: 0%;
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 5rem;
     background-color: #d8fa00;
-    border-radius: 10vh;
+    border-radius: 10rem;
 }
 
 .panel-green-name-char-bg span {
@@ -1826,7 +1824,7 @@ body {
     width: 100%;
     margin-right: 4%;
     font-family: 'din-next-bold';
-    font-size: 5vh;
+    font-size: 50px;
 }
 
 .haru-pattern-bg {
@@ -1839,6 +1837,7 @@ body {
 
 .haru-pattern-bg img {
     width: 100%;
+    height: 100rem;
     opacity: 0.8;
 }
 
@@ -1852,7 +1851,7 @@ body {
 }
 
 .haru-black-bg img {
-    height: 100vh;
+    height: 100%;
     transform: scale(1.1);
     opacity: 0.3;
     animation: char-bg-scale 40s ease infinite;
@@ -1882,7 +1881,7 @@ body {
 .haru-text-bg span {
     position: relative;
     font-family: 'din-next-heavy';
-    font-size: 14vh;
+    font-size: 130px;
     color: #d8fa00;
     opacity: 1;
     
@@ -1918,7 +1917,7 @@ body {
 .haru-faction-text-bg span {
     position: relative;
     font-family: 'din-next-heavy';
-    font-size: 5vh;
+    font-size: 50px;
     font-style: italic;
     color: #efefef;
     opacity: 1;
