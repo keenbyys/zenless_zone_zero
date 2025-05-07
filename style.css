@@ -1634,10 +1634,11 @@ body {
 
 .haru-art {
     position: absolute;
-    left: -15%;
+    left: -10rem;
     display: grid;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .haru-art img {
@@ -1650,7 +1651,7 @@ body {
 
 .haru-info-block {
     position: absolute;
-    right: 7%;
+    right: 6rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -1711,7 +1712,7 @@ body {
 .info-left span {
     width: 100%;
     font-family: 'din-next-bold';
-    font-size: 4vh;
+    font-size: 40px;
     color: #efefef;
     text-align: left;
 }
@@ -1740,7 +1741,7 @@ body {
 .info-right span {
     width: 100%;
     font-family: 'din-next-regular';
-    font-size: 4vh;
+    font-size: 40px;
     color: #efefef;
     text-align: right;
 }
@@ -1761,7 +1762,7 @@ body {
 .haru-info-img {
     position: relative;
     display: flex;
-    width: 50vh;
+    width: 29rem;
     height: auto;
     background-color: #222222;
     border-radius: 3vh;
@@ -1928,8 +1929,9 @@ body {
 .haru-skill-green-panel-bg {
     position: relative;
     display: flex;
+    justify-content: center;
     width: 100%;
-    height: auto;
+    height: 6rem;
     background-color: #d8fa00;
 }
 
@@ -1937,8 +1939,8 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 0% 11%;
+    width: 80%;
+    margin: 0% 10%;
 }
 
 .haru-skill-buttons-info-bg {
@@ -1947,28 +1949,30 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 .haru-skill-button-bg {
+    CONTAIN-INTRINSIC-BLOCK-SIZE: AUTO 100PX;
     position: relative;
     display: flex;
-    width: 27.3vh;
-    height: 5vh;
-    margin: 3% 2%;
+    width: 16rem;
+    height: 3rem;
+    margin: 0% 1%;
     background-color: #d8fa00;
-    border-radius: 5vh;
+    border-radius: 5rem;
     text-decoration: none;
     overflow: hidden;
     border-style: solid;
-    border-width: 0.5vh;
+    border-width: 5px;
     border-color: #222222;
-    margin: 5% 4%;
     transition: .3s;
 }
 
 .haru-skill-button-bg a {
     position: relative;
     display: flex;
+    align-content: center;
     width: 100%;
     text-decoration: none;
 }
@@ -1981,7 +1985,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'din-next-heavy';
-    font-size: 2.8vh;
+    font-size: 24px; 
+    text-align: center;
     color: #222222;
 }
 
@@ -2011,7 +2016,7 @@ body {
     top: 1%;
     left: -1%;
     bottom: 0%;
-    right: 0%;
+    /* right: 0%; */
     width: 100%;
     opacity: 1;
     transition: .3s;
@@ -2044,16 +2049,15 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
 }
 
 .skill-text-block-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
-    margin: 0% 11%;
+    margin: 3% 10%;
 }
 
 .skill-text-sub-block {
@@ -2063,7 +2067,7 @@ body {
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 65vh;
+    height: 100%;
 }
 
 .skill-text1 {
@@ -2077,8 +2081,8 @@ body {
     background-color: #222222;
     margin: 5%;
     margin-top: 0%;
-    border-bottom-left-radius: 2vh;
-    border-bottom-right-radius: 2vh;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 
 .skill-text2 {
@@ -2092,8 +2096,8 @@ body {
     background-color: #222222;
     margin: 0 5%;
     margin-bottom: 0%;
-    border-bottom-left-radius: 2vh;
-    border-bottom-right-radius: 2vh;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 
 .skill-text-wrapper {
@@ -2106,16 +2110,6 @@ body {
     margin: 6% 10%;
 }
 
-.skill-text-wrapper span {
-    font-family: 'din-next-regular';
-    text-wrap: wrap;
-    text-align: justify;
-    font-size: 3vh;
-    color: #efefef;
-    line-height: 3vh;
-    margin: 3% 0%;
-}
-
 .skill-name-bg {
     position: relative;
     display: flex;
@@ -2125,17 +2119,17 @@ body {
     text-wrap: wrap;
     background-color: #d8fa00;
     width: 100%;
-    height: 9vh;
+    height: 5rem;
     margin: 0% 5%;
     padding: 2% 8%;
-    border-top-right-radius: 2vh;
-    border-top-left-radius: 2vh;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
 }
 
 .skill-name-bg span {
     width: 100%;
     font-family: 'din-next-bold';
-    font-size: 4vh;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -2147,16 +2141,16 @@ body {
     align-items: center;
     overflow: auto;
     width: auto;
-    height: 25vh;
+    height: 14rem;
 }
 
 .content-skill p {
     font-family: 'din-next-regular';
     text-wrap: wrap;
     text-align: justify;
-    font-size: 3vh;
+    font-size: 30px;
     color: #efefef;
-    line-height: 4vh;
+    line-height: 40px;
     margin: 0% 4%;
     margin-left: 0%;
 }
