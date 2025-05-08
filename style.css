@@ -2691,6 +2691,7 @@ body {
     align-items: center;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .event-sub-block-wrapper {
