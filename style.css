@@ -2660,6 +2660,7 @@ body {
     width: 100%;
     height: auto;
     background-color: #efefef;
+    overflow: hidden;
 }
 
 .event-block-green-bg-text {
