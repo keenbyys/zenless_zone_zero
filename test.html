@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="center-images">
+                <img src="media/bottom_panel/logo_game.png" class="nav-image-logo">
+
+                <a href="test.html" class="test">
+                    <div class="test-button">
+                        <br>
+                    </div>
+                    <div class="test-button-text">
+                        <span>Test</span>
+                    </div>
+                </a>
+
+                <div class="nav-image">
+                    <a href="index.html" class="nav-image-icon"><img src="media/menu_icon/menu_icon_main_on.png"
+                            class="size-img"></a>
+                    <a href="characters.html" class="nav-image-icon"><img src="media/menu_icon/char_icon_main_off.png"
+                            class="size-img"></a>
+                    <a href="w-engines.html" class="nav-image-icon"><img src="media/menu_icon/wEngine_icon_main_off.png"
+                            class="size-img">
+                        <a href="events.html" class="nav-image-icon"><img src="media/menu_icon/event_icon_main_off.png"
+                                class="size-img"></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="test-wrapper">
+        <form name="zenless" class="test-abt-site">
+            <p>
+                <br><br><br><span class="question">On which platforms is it possible to download the game?</span><br>
+                <input type="checkbox" name="question1" value="Google Play"> Google Play<br>
+                <input type="checkbox" name="question1" value="Linux"> Linux<br>
+                <input type="checkbox" name="question1" value="Potato"> Potato<br>
+                <input type="checkbox" name="question1" value="HoyoPlay (PC)"> HoyoPlay (PC)<br>
+                <input type="checkbox" name="question1" value="Epic Games"> Epic Games<br>
+                <input type="checkbox" name="question1" value="App Store"> App Store<br>
+                <input type="checkbox" name="question1" value="PS5"> PS5<br>
+                <input type="checkbox" name="question1" value="Xbox Series X|S"> Xbox Series X|S
+            </p>
+        
+            <p>
+                <span class="question">What are the names of the new characters (agents) and what rank?</span><br>
+                <input type="radio" name="question2" value="Vivian (S-Rank), Hugo (S-Rank)"> Vivian (S-Rank), Hugo (S-Rank)<br>
+                <input type="radio" name="question2" value="Harumasa (S-Rank)"> Harumasa (S-Rank)<br>
+                <input type="radio" name="question2" value="Vivian (A-Rank), Vivian (S-Rank)"> Vivian (A-Rank), Vivian (S-Rank)<br>
+                <input type="radio" name="question2" value="Hugo (S-Rank), Harumasa (S-Rank)"> Hugo (S-Rank), Harumasa (S-Rank)
+            </p>
+        
+            <p>
+                <span class="question">What is the maximum number of drive disks that characters can have?</span><br>
+                <input type="radio" name="question3" value="3"> 3<br>
+                <input type="radio" name="question3" value="4"> 4<br>
+                <input type="radio" name="question3" value="The game does not have this content"> The game does not have this content<br>
+                <input type="radio" name="question3" value="6"> 6
+            </p>
+        
+            <p>
+                <span class="question">How many factions are there?</span><br>
+                <input type="radio" name="question4" value="Only 2"> Only 2<br>
+                <input type="radio" name="question4" value="Total 9"> Total 9<br>
+                <input type="radio" name="question4" value="Total 3"> Total 3<br>
+                <input type="radio" name="question4" value="The game does not have this content"> The game does not have this content
+            </p>
+        
+            <p>
+                <span class="question">Which event does not belong to this version?</span><br>
+                <input type="radio" name="question5" value="Today's Recommended Film"> Today's Recommended Film<br>
+                <input type="radio" name="question5" value="An Outdoor Lecture, Somewhere in the Woods"> An Outdoor Lecture, Somewhere in the Woods<br>
+                <input type="radio" name="question5" value="141 Going Green For Everyone"> 141 Going Green For Everyone<br>
+                <input type="radio" name="question5" value="Hollow Zero: Cleanse Calamity"> Hollow Zero: Cleanse Calamity
+            </p>
+        
+            <input class="test-button test-button-text test-button-more" type="button" value="Calculate" onclick="check()"><br><br><br>
+            <textarea class="display-box" name="display" rows="5" cols="50"></textarea><br><br><br>
+        </form>
+        
+        <script>
+        function check() {
+            const form = document.forms["zenless"];
+            let grade = 0;
+        
+            // Правильные варианты платформ
+            const validAnswersQ1 = [
+                "Google Play", "HoyoPlay (PC)", "Epic Games",
+                "App Store", "PS5", "Xbox Series X|S"
+            ];
+        
+            const selectedCheckboxes = form.querySelectorAll('input[name="question1"]:checked');
+            selectedCheckboxes.forEach(cb => {
+                if (validAnswersQ1.includes(cb.value)) grade += 1;
+            });
+        
+            if (form.question2.value === "Vivian (S-Rank), Hugo (S-Rank)") grade += 1;
+            if (form.question3.value === "6") grade += 1;
+            if (form.question4.value === "Total 9") grade += 1;
+            if (form.question5.value === "An Outdoor Lecture, Somewhere in the Woods") grade += 1;
+        
+            form.display.value = "Your grade: " + grade + " (Max grade: 10)";
+        }
+        </script>    
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-img">
+                <img src="media/bottom_panel/logo_game.png" class="footer-img-size">
+            </div>
+            <div class="footer-text-block">
+                <div class="footer-text">
+                    <p>"PlayStation Family Mark" ,"PlayStation" and "PS5 logo" are registered trademarks or trademarks
+                        of Sony Interactive Entertainment Inc.</p>
+                </div>
+                <div class="footer-text">
+                    <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are
+                        trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of
+                        their respective owners.</p>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="media/bottom_panel/hoyo.png" class="footer-hoyo-img">
+            </div>
+            <div class="footer-text-block">
+                <div class="footer-text">
+                    <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+                </div>
+                <div class="footer-text">
+                    <p>2025 | Design: Vlad Siadro (keenbyys)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+
+
+</html>

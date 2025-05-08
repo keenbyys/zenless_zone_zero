@@ -394,12 +394,17 @@ body {
     -webkit-text-stroke: 2.1px #222222;
     transform: scale(1.1);
     animation: move-text 1s ease;
-    
+
 }
 
 @keyframes move-text {
-    0% { top: -80%;}
-    100% { top: 3%; }
+    0% {
+        top: -80%;
+    }
+
+    100% {
+        top: 3%;
+    }
 }
 
 .new-char-pattern-bg {
@@ -1014,7 +1019,7 @@ body {
 
 .char-block-green {
     position: relative;
-    width: 33rem; 
+    width: 33rem;
     height: 6.2rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -1094,19 +1099,23 @@ body {
 
 @keyframes image-fade {
     0% {
-      opacity:1;
+        opacity: 1;
     }
+
     17% {
-      opacity:1;
+        opacity: 1;
     }
+
     25% {
-      opacity:0;
+        opacity: 0;
     }
+
     92% {
-      opacity:0;
+        opacity: 0;
     }
+
     100% {
-      opacity:1;
+        opacity: 1;
     }
 }
 
@@ -1123,45 +1132,50 @@ body {
 }
 
 .char-banner-white-bg .char-banner1 {
-  animation-delay: 20s;
+    animation-delay: 20s;
 }
+
 .char-banner-white-bg .char-banner2 {
-  animation-delay: 16s;
+    animation-delay: 16s;
 }
+
 .char-banner-white-bg .char-banner3 {
-  animation-delay: 12s;
+    animation-delay: 12s;
 }
+
 .char-banner-white-bg .char-banner4 {
-  animation-delay: 8s;
+    animation-delay: 8s;
 }
+
 .char-banner-white-bg .char-banner5 {
-  animation-delay: 4s;
+    animation-delay: 4s;
 }
+
 .char-banner-white-bg .char-banner6 {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
-.char-banner-white-bg:hover .char-banner1{
+.char-banner-white-bg:hover .char-banner1 {
     width: 175rem;
 }
 
-.char-banner-white-bg:hover .char-banner2{
+.char-banner-white-bg:hover .char-banner2 {
     width: 175rem;
 }
 
-.char-banner-white-bg:hover .char-banner3{
+.char-banner-white-bg:hover .char-banner3 {
     width: 175rem;
 }
 
-.char-banner-white-bg:hover .char-banner4{
+.char-banner-white-bg:hover .char-banner4 {
     width: 175rem;
 }
 
-.char-banner-white-bg:hover .char-banner5{
+.char-banner-white-bg:hover .char-banner5 {
     width: 175rem;
 }
 
-.char-banner-white-bg:hover .char-banner6{
+.char-banner-white-bg:hover .char-banner6 {
     width: 175rem;
 }
 
@@ -1201,7 +1215,7 @@ body {
     margin-top: 5%;
 }
 
-.faction-margin-bottom  {
+.faction-margin-bottom {
     margin-bottom: 5%;
 }
 
@@ -1299,12 +1313,29 @@ body {
 }
 
 @keyframes open-bg {
-    0% { height: .5vh; } 
-    4% { height: .5vh; }
-    6% { height: 1.7vh; }
-    87% { height: 1.7vh; }
-    89% { height: .5vh; } 
-    100% { height: .5vh; } 
+    0% {
+        height: .5vh;
+    }
+
+    4% {
+        height: .5vh;
+    }
+
+    6% {
+        height: 1.7vh;
+    }
+
+    87% {
+        height: 1.7vh;
+    }
+
+    89% {
+        height: .5vh;
+    }
+
+    100% {
+        height: .5vh;
+    }
 }
 
 .move-faction-text-bg span {
@@ -1322,8 +1353,13 @@ body {
 }
 
 @keyframes move-faction-text {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(250%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(250%);
+    }
 }
 
 
@@ -1489,11 +1525,11 @@ body {
     color: #d8fa00;
 }
 
-.haru-button-back-bg:hover .haru-button-back-bg-text{
+.haru-button-back-bg:hover .haru-button-back-bg-text {
     opacity: 1;
 }
 
-.haru-button-back-bg:hover .haru-button-pattern-bg{
+.haru-button-back-bg:hover .haru-button-pattern-bg {
     opacity: 1;
 }
 
@@ -1575,11 +1611,11 @@ body {
     color: #d8fa00;
 }
 
-.haru-button-base-stats-bg:hover .haru-button-back-bg-text{
+.haru-button-base-stats-bg:hover .haru-button-back-bg-text {
     opacity: 1;
 }
 
-.haru-button-base-stats-bg:hover .haru-button-pattern-bg{
+.haru-button-base-stats-bg:hover .haru-button-pattern-bg {
     opacity: 1;
 }
 
@@ -1885,7 +1921,7 @@ body {
     font-size: 130px;
     color: #d8fa00;
     opacity: 1;
-    
+
 }
 
 @keyframes move-haru-text-bg {
@@ -1985,7 +2021,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'din-next-heavy';
-    font-size: 24px; 
+    font-size: 24px;
     text-align: center;
     color: #222222;
 }
@@ -1994,11 +2030,11 @@ body {
     color: #d8fa00;
 }
 
-.haru-skill-button-bg:hover .haru-button-back-bg-text{
+.haru-skill-button-bg:hover .haru-button-back-bg-text {
     opacity: 1;
 }
 
-.haru-skill-button-bg:hover .haru-button-pattern-bg{
+.haru-skill-button-bg:hover .haru-button-pattern-bg {
     opacity: 1;
 }
 
@@ -2222,7 +2258,7 @@ body {
 }
 
 
-.info-drive-disk-block{
+.info-drive-disk-block {
     position: relative;
     display: flex;
     justify-content: center;
@@ -2238,7 +2274,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 42rem; 
+    height: 42rem;
     background-color: #222222;
     border-radius: 3vh;
     margin-left: 5%;
@@ -2311,7 +2347,7 @@ body {
     }
 }
 
-.info-drive-panel-bg:hover .stats-disk-text span{
+.info-drive-panel-bg:hover .stats-disk-text span {
     animation: change-color-num-disk-text 1.5s ease infinite;
 }
 
@@ -2471,7 +2507,7 @@ body {
 
 .w-engine-block-green {
     position: relative;
-    width: 25rem; 
+    width: 25rem;
     height: 6.2rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -2542,7 +2578,7 @@ body {
     position: absolute;
     transform: translateY(85%);
     display: flex;
-    width: 16.7rem; 
+    width: 16.7rem;
     height: 5rem;
     background-color: #d8fa00;
     transition: .3s;
@@ -2552,7 +2588,7 @@ body {
     transform: translateY(0%);
 }
 
-.button-rank span { 
+.button-rank span {
     position: absolute;
     font-family: 'din-next-bold';
     font-size: 35px;
@@ -2804,7 +2840,7 @@ body {
     font-size: 40px;
     text-align: center;
     line-height: 1.1;
-} 
+}
 
 .event-text-time {
     position: relative;
@@ -2834,4 +2870,127 @@ body {
     font-size: 30px;
     color: #efefef;
     text-align: center;
+}
+
+/* TEST BUTTON ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    transition: .3s;
+    opacity: .9;
+}
+
+
+.test-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    background-color: #d8fa00;
+    border-radius: 5rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.test-button-text {
+    position: absolute;
+    font-family: 'din-next-heavy', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: #222222;
+    text-align: center;
+}
+
+.test:hover {
+    opacity: 1;
+}
+
+.test:hover .test-button {
+    animation: bg-pulse .8s ease infinite;
+}
+
+@keyframes bg-pulse {
+    0% {
+        transform: scale(1);
+        background-color: #d8fa00;
+    }
+
+    50% {
+        transform: scale(1.1);
+        background-color: #fbfe00;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: #d8fa00;
+    }
+}
+
+/* TEST PAGE //////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.form-block {
+    width: 100%;
+    height: auto;
+    margin-top: 5.6rem;
+}
+
+.test-wrapper {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin: 0 10%;
+}
+
+.test-abt-site {
+    width: 100%;
+    background-color: #313131;
+    border-radius: 4rem;
+    margin: 2% 0;
+    margin-top: 13%;
+}
+
+.test-abt-site-margin {
+    margin: 0% 0;
 } 
+
+.test-abt-site p{
+    color: #efefef;
+    font-size: 30px;
+    margin: 0% 10%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+.test-abt-site span.question{
+    color: #efefef;
+    font-size: 35px;
+    font-family: 'din-next-medium', sans-serif;
+}
+
+.test-abt-site span.answ{
+    margin-left: 2%;
+}
+
+.test-button-more {
+    margin: 0 10%;
+    width: 80%;
+}
+
+.display-box {
+    display: flex;
+    justify-content: center;
+    font-family: 'din-next-medium', sans-serif;
+    background-color: #efefef;
+    width: 80%;
+    margin-bottom: 2%;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 30px;
+    color: #222222;
+    margin: 0 10%;
+}
