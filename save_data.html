@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Save data</title>
+</head>
+
+<body>
+
+  <header class="header">
+        <div class="header-wrapper">
+            <div class="center-images">
+                <img src="media/bottom_panel/logo_game.png" class="nav-image-logo">
+
+                <a href="test.html" class="test">
+                    <div class="test-button">
+                        <br>
+                    </div>
+                    <div class="test-button-text">
+                        <span>Test</span>
+                    </div>
+                </a>
+
+                <div class="nav-image">
+                    <a href="index.html" class="nav-image-icon"><img src="media/menu_icon/menu_icon_main_off.png"class="size-img"></a>
+                    <a href="characters.html" class="nav-image-icon"><img src="media/menu_icon/char_icon_main_off.png"class="size-img"></a>
+                    <a href="w-engines.html" class="nav-image-icon"><img src="media/menu_icon/wEngine_icon_main_off.png"class="size-img">
+                    <a href="events.html" class="nav-image-icon"><img src="media/menu_icon/event_icon_main_off.png"class="size-img"></a>
+                    <a href="save_data.html" class="nav-image-icon"><img src="media/user_data.png" class="size-img" style="margin-left: 2rem;"></a>
+                    <a href="review.html" class="nav-image-icon"><img src="media/review_logo.png" class="size-img"></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+  <div class="container">
+
+    <div class="savedata-wrapper">
+      <div class="background-color">
+        <h2>Enter your data</h2>
+        <form id="userForm">
+          <label>
+            <span>First name:</span>
+            <span>Last name:</span>
+            <span>Nickname:</span>
+          </label>
+          <label>
+            <input type="text" id="firstName">
+            <input type="text" id="lastName">
+            <input type="text" id="nickname">
+          </label>
+
+
+        </form>
+        <button id="saveBtn" class="button">Save a data</button>
+        <button id="clearBtn" class="button">Clear a saved data</button>
+
+        <p id="Msg"></p>
+
+        <h3>Your saved data:</h3>
+        <textarea type="text" id="savedData" readonly style="width: 100%;"></textarea><br><br>
+
+        
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-img">
+                <img src="media/bottom_panel/logo_game.png" class="footer-img-size">
+            </div>
+            <div class="footer-text-block">
+                <div class="footer-text">
+                    <p>"PlayStation Family Mark" ,"PlayStation" and "PS5 logo" are registered trademarks or trademarks
+                        of Sony Interactive Entertainment Inc.</p>
+                </div>
+                <div class="footer-text">
+                    <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are
+                        trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of
+                        their respective owners.</p>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="media/bottom_panel/hoyo.png" class="footer-hoyo-img">
+            </div>
+            <div class="footer-text-block">
+                <div class="footer-text">
+                    <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+                </div>
+                <div class="footer-text">
+                    <p>2025 | Design: Vlad Siadro (keenbyys)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <script>
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+    const nicknameInput = document.getElementById('nickname');
+    const savedDataField = document.getElementById('savedData');
+    const errorMsg = document.getElementById('errorMsg');
+    const successMsg = document.getElementById('successMsg');
+
+    function updateSavedDataField() {
+      const firstName = localStorage.getItem('firstName');
+      const lastName = localStorage.getItem('lastName');
+      const nickname = localStorage.getItem('nickname');
+
+      if (firstName && lastName && nickname) {
+        savedDataField.value = `First name: ${firstName}, Last name: ${lastName}, Nickname: ${nickname}`;
+      } else {
+        savedDataField.value = 'The data has not been saved.';
+      }
+    }
+
+    document.getElementById('saveBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const firstName = firstNameInput.value.trim();
+      const lastName = lastNameInput.value.trim();
+      const nickname = nicknameInput.value.trim();
+
+      if (!firstName || !lastName || !nickname) {
+        Msg.textContent = 'Error: all fields must be filled in!';
+        return;
+      }
+
+      localStorage.setItem('firstName', firstName);
+      localStorage.setItem('lastName', lastName);
+      localStorage.setItem('nickname', nickname);
+
+      Msg.textContent = '';
+      Msg.textContent = 'Data successfully saved!';
+      updateSavedDataField();
+    });
+
+    document.getElementById('clearBtn').addEventListener('click', () => {
+      localStorage.removeItem('firstName');
+      localStorage.removeItem('lastName');
+      localStorage.removeItem('nickname');
+
+      firstNameInput.value = '';
+      lastNameInput.value = '';
+      nicknameInput.value = '';
+      Msg.textContent = 'The data has been successfully cleared!';
+      updateSavedDataField();
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedFirstName = localStorage.getItem('firstName');
+      const savedLastName = localStorage.getItem('lastName');
+      const savedNickname = localStorage.getItem('nickname');
+
+      if (savedFirstName) firstNameInput.value = savedFirstName;
+      if (savedLastName) lastNameInput.value = savedLastName;
+      if (savedNickname) nicknameInput.value = savedNickname;
+
+      updateSavedDataField();
+    });
+  </script>
+</body>
+
+</html>

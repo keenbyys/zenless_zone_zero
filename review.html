@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+        .message {
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .error {
+            background-color: #d4d4d4;
+            border: 1px solid #4b4b4b;
+            color: #4b4b4b;
+        }
+
+        .success {
+            background-color: #d4d4d4;
+            border: 1px solid #4b4b4b;
+            color: #4b4b4b;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="center-images">
+                <img src="media/bottom_panel/logo_game.png" class="nav-image-logo">
+
+                <a href="test.html" class="test">
+                    <div class="test-button">
+                        <br>
+                    </div>
+                    <div class="test-button-text">
+                        <span>Test</span>
+                    </div>
+                </a>
+
+                <div class="nav-image">
+                    <a href="index.html" class="nav-image-icon"><img src="media/menu_icon/menu_icon_main_off.png"
+                            class="size-img"></a>
+                    <a href="characters.html" class="nav-image-icon"><img src="media/menu_icon/char_icon_main_off.png"
+                            class="size-img"></a>
+                    <a href="w-engines.html" class="nav-image-icon"><img src="media/menu_icon/wEngine_icon_main_off.png"
+                            class="size-img">
+                        <a href="events.html" class="nav-image-icon"><img src="media/menu_icon/event_icon_main_off.png"
+                                class="size-img"></a>
+                        <a href="save_data.html" class="nav-image-icon"><img src="media/user_data.png" class="size-img"
+                                style="margin-left: 2rem;"></a>
+                        <a href="review.html" class="nav-image-icon"><img src="media/review_logo.png"
+                                class="size-img"></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 id="main-title">Feedback Form</h1>
+
+        <form id="feedbackForm">
+            <label style="font-family: 'din-next-bold', sans-serif;">
+                Your feedback:
+                <textarea name="userReview" placeholder="Write here what you think of the site....." style="width: 97.8%; resize: none; font-family: 'den-next-regular', sans-serif; border-radius: .5rem; padding: 1%; font-size: 17px;"></textarea>
+            </label>
+
+            <label style="margin-top: 2%;">
+                Site rating (1 to 10):
+                <input style="font-size: 20px;" type="number" name="rating" min="1" max="10">
+            </label>
+
+            <label style="margin-top: 2%;">
+                Phone number:
+                <input style="font-size: 18px;" type="tel" name="phone" id="phoneInput" placeholder="+380 67 123 4567"
+                    pattern="\+?[0-9\-\s]{7,20}">
+                <small style="font-size: 15px;">Enter up to 10 digits</small>
+            </label>
+
+            <label style="font-family: 'din-next-bold', sans-serif; margin-top: 2%;">How much did you enjoy the site?</label>
+            <label><input type="radio" name="likeLevel" value="Очень понравился"> I liked it a lot</label>
+            <label><input type="radio" name="likeLevel" value="Нормально"> It's fine</label>
+            <label><input type="radio" name="likeLevel" value="Не понравился"> Didn't like it</label>
+
+            <label style="font-family: 'din-next-bold', sans-serif; margin-top: 2%;">What exactly did you like about it?</label>
+            <label><input type="checkbox" name="likedParts" value="Дизайн"> Design</label>
+            <label><input type="checkbox" name="likedParts" value="Навигация"> Navigation</label>
+            <label><input type="checkbox" name="likedParts" value="Контент"> Content</label>
+
+            <div class="buttons">
+                <button type="submit">Send Feedback</button>
+                <button type="button" id="resetButton">Reset</button>
+            </div>
+        </form>
+
+        <div id="messageBox"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-img">
+                <img src="media/bottom_panel/logo_game.png" class="footer-img-size">
+            </div>
+            <div class="footer-text-block">
+                <div class="footer-text">
+                    <p>"PlayStation Family Mark" ,"PlayStation" and "PS5 logo" are registered trademarks or trademarks
+                        of Sony Interactive Entertainment Inc.</p>
+                </div>
+                <div class="footer-text">
+                    <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are
+                        trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of
+                        their respective owners.</p>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="media/bottom_panel/hoyo.png" class="footer-hoyo-img">
+            </div>
+            <div class="footer-text-block">
+                <div class="footer-text">
+                    <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+                </div>
+                <div class="footer-text">
+                    <p>2025 | Design: Vlad Siadro (keenbyys)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.document.title = "Review";
+
+        const form = window.document.forms['feedbackForm'];
+        const messageBox = window.document.getElementById('messageBox');
+        const resetButton = window.document.getElementById('resetButton');
+        const phoneInput = window.document.getElementById('phoneInput');
+
+        phoneInput.addEventListener('input', function () {
+            const digits = this.value.replace(/\D/g, '');
+            if (digits.length > 10) {
+                let result = '';
+                let digitCount = 0;
+                for (let i = 0; i < this.value.length; i++) {
+                    const char = this.value[i];
+                    if (/\d/.test(char)) {
+                        if (digitCount >= 10) continue;
+                        digitCount++;
+                    }
+                    result += char;
+                }
+                this.value = result;
+            }
+        });
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const errors = [];
+            const review = form.userReview.value.trim();
+            const rating = form.rating.value.trim();
+            const phone = form.phone.value.trim();
+            const digitsOnly = phone.replace(/\D/g, '');
+            const likeLevel = form.likeLevel.value;
+            const likedParts = Array.from(window.document.querySelectorAll('input[name="likedParts"]:checked'));
+
+            if (rating === '' || isNaN(rating) || rating < 1 || rating > 10) {
+                errors.push("Enter a correct score between 1 and 10.");
+            }
+            if (phone === '') {
+                errors.push("The ‘Phone Number’ field is not filled in.");
+            } else if (digitsOnly.length > 10) {
+                errors.push("В номере телефона должно быть не более 10 цифр.");
+            }
+            if (!likeLevel) {
+                errors.push("The phone number should have no more than 10 digits.");
+            }
+            if (likedParts.length === 0) {
+                errors.push("Select at least one item that you like (checkboxes).");
+            }
+
+            messageBox.innerHTML = '';
+
+            if (errors.length > 0) {
+                const errorDiv = window.document.createElement('div');
+                errorDiv.className = 'message error';
+                errorDiv.innerHTML = `<strong>Errors in filling out the form:</strong><ul>${errors.map(e => `<li>${e}</li>`).join('')}</ul>`;
+                messageBox.appendChild(errorDiv);
+                errorDiv.scrollIntoView({ behavior: 'smooth' });
+                return;
+            }
+
+            const successDiv = window.document.createElement('div');
+            successDiv.className = 'message success';
+            successDiv.innerHTML = `
+                <strong>Thank you for your review!</strong>
+                <p><strong>Feedback:</strong> ${review}</p>
+                <p><strong>Evaluation:</strong> ${rating}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Impression:</strong> ${likeLevel}</p>
+                <p><strong>Liked:</strong> ${likedParts.map(cb => cb.value).join(', ')}</p>
+            `;
+            messageBox.appendChild(successDiv);
+            successDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        resetButton.addEventListener('click', function () {
+            form.reset();
+            messageBox.innerHTML = '';
+        });
+    </script>
+</body>
+
+</html>
