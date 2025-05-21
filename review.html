@@ -98,14 +98,14 @@
             </label>
 
             <label style="font-family: 'din-next-bold', sans-serif; margin-top: 2%;">How much did you enjoy the site?</label>
-            <label><input type="radio" name="likeLevel" value="Очень понравился"> I liked it a lot</label>
-            <label><input type="radio" name="likeLevel" value="Нормально"> It's fine</label>
-            <label><input type="radio" name="likeLevel" value="Не понравился"> Didn't like it</label>
+            <label><input type="radio" name="likeLevel" value="I liked it a lot"> I liked it a lot</label>
+            <label><input type="radio" name="likeLevel" value="It's fine"> It's fine</label>
+            <label><input type="radio" name="likeLevel" value="Didn't like it"> Didn't like it</label>
 
             <label style="font-family: 'din-next-bold', sans-serif; margin-top: 2%;">What exactly did you like about it?</label>
-            <label><input type="checkbox" name="likedParts" value="Дизайн"> Design</label>
-            <label><input type="checkbox" name="likedParts" value="Навигация"> Navigation</label>
-            <label><input type="checkbox" name="likedParts" value="Контент"> Content</label>
+            <label><input type="checkbox" name="likedParts" value="Design"> Design</label>
+            <label><input type="checkbox" name="likedParts" value="Navigation"> Navigation</label>
+            <label><input type="checkbox" name="likedParts" value="Content"> Content</label>
 
             <div class="buttons">
                 <button type="submit">Send Feedback</button>
@@ -188,13 +188,10 @@
             if (phone === '') {
                 errors.push("The ‘Phone Number’ field is not filled in.");
             } else if (digitsOnly.length > 10) {
-                errors.push("В номере телефона должно быть не более 10 цифр.");
+                errors.push("The phone number should have no more than 10 digits.");
             }
             if (!likeLevel) {
                 errors.push("The phone number should have no more than 10 digits.");
-            }
-            if (likedParts.length === 0) {
-                errors.push("Select at least one item that you like (checkboxes).");
             }
 
             messageBox.innerHTML = '';
